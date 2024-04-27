@@ -3,7 +3,85 @@
 <head>
   <title>SunnyBites</title>
   <style>
-    /* CSS styles here */
+        /* CSS for header */
+    header {
+      background: linear-gradient(to bottom, #FDC830, #F37335);
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    /* CSS for dishes section */
+    .dish {
+      display: inline-block;
+      margin: 10px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .dish img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .dish .details {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #ffffff;
+      padding: 10px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .dish:hover .details {
+      opacity: 1;
+    }
+
+    /* CSS for testimonials section */
+    .testimonial {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .testimonial img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    /* CSS for footer */
+    footer {
+      background-color: #FDC830;
+      padding: 20px;
+      text-align: center;
+      color: #ffffff;
+    }
+  </style>
   </style>
 </head>
 <body>
